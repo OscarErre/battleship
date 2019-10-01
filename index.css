@@ -1,0 +1,229 @@
+.ships {
+    position: absolute;
+    z-index: 1;
+    cursor: grab;
+}
+
+.disparo {
+    position: absolute;
+    z-index: 2;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    background-image: url("./img/tablero.jpg");
+    background-size: 100%;
+    visibility: hidden;
+    margin: AUTO;
+    margin-top: 1%;
+    width: 95vw;
+    height: 415px;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: outset;
+    box-shadow: 15px 15px 15px black;
+}
+
+img {
+    left: 0px;
+    filter: drop-shadow(5px 5px 5px #222);
+}
+
+.start {
+    padding-top: 25px;
+    height: 75px;
+    width: 100px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background: #ffe815;
+    border-radius: 100%;
+    border: 2px solid #353535;
+    box-shadow: 0 5px 5px whitesmoke;
+    cursor: pointer;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+body {
+    background-image: url("./img/body.jpg");
+    background-size: 100%;
+    font-family: Rajdhani;
+    text-align: center;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Alfa Slab One'; 
+    font-size: 60px; 
+    color:whitesmoke; 
+    margin-top: 3%;
+    text-shadow: 5px 4px black;
+
+}
+
+.buttons {
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 5%;
+    height: 375px;
+}
+
+.titleBoard, .player{
+    font-size: 30px;
+    color: aliceblue;
+}
+
+.shipsLand {
+    margin: 5%;
+    width: 150px;
+    display: inline-block;
+    height: 375px;
+    position: relative;
+}
+
+.player {
+    margin-top: 1%;
+    padding-top: 10px;
+    height: 50px;
+    background-image: url('./img/player1.png');
+    background-repeat: no-repeat;
+    background-size: 350px 50px;
+    background-position: 50%;
+    visibility: hidden;
+}
+
+h2{
+    margin-top: 100px;
+    letter-spacing: 20px;
+    background: #edf3f5;
+    margin-bottom: 100px;
+}
+.board {
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: outset;
+    box-shadow: 0 15px 15px black;
+    margin-top: 1%;
+    height: 385px;
+    width: 410px;
+    /*background-image: url("./img/tablero.jpg");*/
+    text-align: center;
+    display: inline-block;
+}
+
+.row {
+    margin: 0px, 0px, 0px, 0px;
+    font-size: 20px;
+    line-height:0;
+}
+
+.cell {
+    margin: 0px, 0px, 0px, 0px;
+    height: 30px;
+    width: 30px;
+    border-color: whitesmoke;
+    border-width: 1px;
+    border-style: solid;
+    display: inline-block;
+    position: relative;
+}
+
+.unDropable {
+    background: rgba(255, 0, 0, 0.7);
+}
+.number {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(255,0,0,0);
+    width: 30px;
+    height: 10px;
+    line-height:0;
+    display: inline-block;
+}
+
+.letter {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(255,0,0,0);
+    width: 20px;
+    display: inline-block;
+    vertical-align: super;    
+}
+.enemy {
+    cursor: crosshair;
+}
+
+footer {
+    margin-top: 5%;
+    background: rgb(90, 90, 90);
+    color: whitesmoke;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    left: 0;
+}
+
+#changing, #countBack {
+    font-family: 'Alfa Slab One'; 
+    font-size: 30px; 
+    color:whitesmoke; 
+    margin-top: 3%;
+    height: 300px;
+    text-shadow: 5px 4px black;
+}
+
+#changing {
+    visibility: hidden;
+}
+
+@keyframes waiting {
+    from {font-size: 10px;}
+    to {font-size: 80px;}
+}
+
+#endGame {
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(82, 82, 82, 0.3);
+    color: #535252;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    visibility: hidden;
+    z-index: 100;
+}
+
+h3 {
+    background: #ffe815;
+    margin: 0;
+    margin-top: 40vh;
+    height: 50px;
+    width: 100vw;
+    letter-spacing: 15px;
+    font-size: 40px;
+    color: #535252;
+    border-top: 2px solid whitesmoke;
+    border-bottom: 4px solid #535252;
+}
+
+h4 {
+    font-size: 40px;
+    margin:auto;
+    margin-top: 10px;
+    color: whitesmoke;
+    background: #505050;
+    height: 125px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 3px groove whitesmoke;
+}
